@@ -60,6 +60,7 @@ Project Structure
 arduino
 Copy code
 mern-ecommerce/
+
 ├── backend/
 │   ├── config/
 │   ├── controllers/
