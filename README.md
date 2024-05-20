@@ -60,25 +60,25 @@ Project Structure
 arduino
 Copy code
 mern-ecommerce/
-
+<br>
 ├── backend/
-│   ├── config/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── utils/
-│   ├── .env
-│   ├── server.js
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── redux/
-│   │   ├── App.js
-│   │   ├── index.js
-│   ├── package.json
-├── README.md
+<br>│   ├── config/
+<br>│   ├── controllers/
+<br>│   ├── models/
+<br>│   ├── routes/
+<br>│   ├── utils/
+<br>│   ├── .env
+<br>│   ├── server.js
+<br>├── frontend/
+<br>│   ├── public/
+<br>│   ├── src/
+<br>│   │   ├── components/
+<br>│   │   ├── pages/
+<br>│   │   ├── redux/
+<br>│   │   ├── App.js
+<br>│   │   ├── index.js
+<br>│   ├── package.json
+<br>├── README.md
 Contributing
 Contributions are welcome! Please fork this repository and submit a pull request for any improvements.
 
