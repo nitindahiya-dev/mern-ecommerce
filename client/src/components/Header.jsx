@@ -22,6 +22,7 @@ export default function Header() {
           <span className="font-semibold font-primaryFont">
             Need help? <a href="tel:+00 00000000" >+00 00000000</a>
           </span>
+          <Link to={""}></Link>
           <IoPersonOutline />
           <FaRegHeart />
           <MdOutlineShoppingBag />

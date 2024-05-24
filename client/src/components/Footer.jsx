@@ -5,10 +5,10 @@ import { GrSend } from "react-icons/gr";
 
 
 export default function Footer() {
+
+  const currentYear = new Date().getFullYear();
   return (
-
-
-    <footer>
+    <footer className="bg-neutral-200">
       <div className="mx-auto w-full max-w-[1450px] p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -62,15 +62,17 @@ export default function Footer() {
             <div className="max-w-[250px]">
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">SUBSCRIBE</h2>
               <p>Be the first to get the latest news about trends, promotions, and much more!</p>
-              <form className="mt-4">
-                    <TextInput type="text" placeholder="Your email address" rightIcon={GrSend} />
-                </form>
+              <form className="mt-4 mb-4">
+                <TextInput type="text" placeholder="Your email address" rightIcon={GrSend} />
+              </form>
+              <span>Secure payments</span>
+              <img src="./payment-options.png" alt="1515" />
             </div>
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm  sm:text-center">© 2023 <a href="https://flowbite.com/" className="hover:underline"><span className="text-amber-900 font-semibold">Mern</span>Ecom</a>. All Rights Reserved.
+          <span className="text-sm  sm:text-center">© {currentYear} <a href="https://flowbite.com/" className="hover:underline"><span className="text-amber-900 font-semibold">Mern</span>Ecom</a>. All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a href="!#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
