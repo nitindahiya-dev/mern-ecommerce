@@ -5,61 +5,54 @@ Welcome to the MERN E-Commerce Project! This is a full-fledged e-commerce applic
 
 
 Features
-User authentication and authorization
-Product listing and search
-Shopping cart and checkout process
-Order management
-Admin dashboard for managing products and orders
-Responsive design for seamless experience across devices
-Technologies Used
-Frontend: React.js, Redux, Bootstrap
-Backend: Node.js, Express.js
-Database: MongoDB, Mongoose
-Authentication: JWT (JSON Web Tokens)
-Payment Gateway: Stripe API
-Getting Started
-Follow these instructions to set up the project locally.
+=> User authentication and authorization<br>
+=> Product listing and search<br>
+=> Shopping cart and checkout process<br>
+=> Order management<br>
+=> Admin dashboard for managing products and orders<br>
+=> Responsive design for seamless experience across devices<br>
+=> Technologies Used<br>
+=> Frontend: React.js, Redux, Tailwind <br>
+=> Backend: Node.js, Express.js<br>
+=> Database: MongoDB, Mongoose<br>
+=> Authentication: JWT (JSON Web Tokens)<br>
+=> Payment Gateway: Stripe API<br>
+=> Getting Started<br>
+=> Follow these instructions to set up the project locally.<br>
 
-Prerequisites
-Node.js and npm installed
-MongoDB installed and running
-Installation
-Clone the repository
+Prerequisites<br>
+=> Node.js and npm installed<br>
+=> MongoDB installed and running<br>
+=> Installation<br>
+=> Clone the repository<br>
 
-bash
-Copy code
-git clone https://github.com/your-username/mern-ecommerce.git
-cd mern-ecommerce
-Install dependencies for both frontend and backend
+bash<br>
+=> git clone (https://github.com/nitindahiya199/mern-ecommerce)<br>
+=> cd mern-ecommerce<br>
+=> Install dependencies for both frontend and backend<br>
 
-bash
-Copy code
-cd frontend
-npm install
-cd ../backend
-npm install
-Create a .env file in the backend directory and add the following environment variables
+bash<br>
+=> cd frontend<br>
+=> npm install<br>
+=> cd ../backend<br>
+=> npm i<br>
+=> Create a .env file in the backend directory and add the following environment variables<br>
 
-makefile
-Copy code
-MONGO_URI=your-mongodb-uri
-JWT_SECRET=your-jwt-secret
-STRIPE_SECRET_KEY=your-stripe-secret-key
-Run the development server
+makefile<br>
+=> MONGO_URI=your-mongodb-uri<br>
+=> JWT_SECRET=your-jwt-secret<br>
+=> STRIPE_SECRET_KEY=your-stripe-secret-key<br>
+=> Run the development server<br>
 
-bash
-Copy code
-# In the backend directory
-npm run dev
+# In the backend directory<br>
+=> npm run dev<br>
+<br>
+# In the frontend directory<br>
+=> npm run dev<br>
+=> Open http://localhost:3000 to view the app in the browser.<br>
 
-# In the frontend directory
-npm start
-Open http://localhost:3000 to view the app in the browser.
-
-Project Structure
-arduino
-Copy code
-mern-ecommerce/
+Project Structure<br>
+mern-ecommerce/<br>
 <br>
 ├── backend/
 <br>│   ├── config/
@@ -78,44 +71,18 @@ mern-ecommerce/
 <br>│   │   ├── App.js
 <br>│   │   ├── index.js
 <br>│   ├── package.json
-<br>├── README.md
+<br>├── README.md<br>
 Contributing
-Contributions are welcome! Please fork this repository and submit a pull request for any improvements.
+Contributions are welcome! Please fork this repository and submit a pull request for any improvements.<br>
 
 Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-License
-Distributed under the MIT License. See LICENSE for more information.
+=> Create your Feature Branch (git checkout -b feature/AmazingFeature) <br>
+=> Commit your Changes (git commit -m 'Add some AmazingFeature')<br>
+=> Push to the Branch (git push origin feature/AmazingFeature)<br>
+=> Open a Pull Request<br>
+
 
 Contact
 Your Name - @linkedin-handle - <a href="https://www.linkedin.com/in/nitin-dahiya/">Nitin Dahiya</a>
 
 Project Link: https://github.com/nitindahiya199/mern-ecommerce
-
-Acknowledgements
-<a href="https://react.dev/">
-React
-</a>
-<a href="https://nodejs.org/en">
-Node.js
-</a>
-<a href="https://expressjs.com/">
-Express.js
-</a>
-<a href="https://www.mongodb.com/">
-MongoDB
-</a>
-<a href="https://tailwindcss.com//">
-Tailwind CSS
-</a>
-<a href="https://strapi.io/">
-Stripe API
-
-</a>
-
-
-
-
