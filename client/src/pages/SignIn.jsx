@@ -4,7 +4,7 @@ export default function SignIn() {
 
   const currentYear = new Date().getFullYear();
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex max-w-[1550px] mx-auto">
       <div className="flex flex-row w-full">
         <div className='hidden lg:flex flex-col justify-between bg-amber-300 lg:p-8 xl:p-12 lg:max-w-sm xl:max-w-xl'>
           <div className="flex items-center justify-start space-x-3">
@@ -40,7 +40,7 @@ export default function SignIn() {
               <h2 className="text-3xl md:text-4xl font-bold">Sign in to account</h2>
               <p className="text-md md:text-xl">log in to place the order!</p>
             </div>
-            <div className="flex flex-col max-w-md space-y-5">
+            <div className="flex flex-col max-w-md sm:w-[500px]  space-y-5">
               
               <input type="email" placeholder="Email"
                 className="flex px-3 py-2 md:px-4 md:py-3 border-2 border-black rounded-lg font-medium placeholder:font-normal" />

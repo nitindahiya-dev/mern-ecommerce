@@ -16,7 +16,7 @@ export default function SignUp() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex max-w-[1550px] mx-auto">
       <div className="flex flex-row w-full">
         <div className='hidden lg:flex flex-col justify-between bg-amber-300 lg:p-8 xl:p-12 lg:max-w-sm xl:max-w-xl'>
           <div className="flex items-center justify-start space-x-3">
