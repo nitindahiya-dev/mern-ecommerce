@@ -16,9 +16,9 @@ export const signup = async (req, res, next) => {
     next(errorHandler(400, "All fields are required"));
   }
 
-  const hash_password = bcryptjs.hashSync(password, 10);
+  const hash_password = await bcryptjs.hashSync(password, 10);
 
-  const newUser = new User({
+  const newUser = await new User({
     username: username,
     email: email,
     password: hash_password,
@@ -26,7 +26,7 @@ export const signup = async (req, res, next) => {
 
   try {
     await newUser.save();
-    res.json("Signup Successful");
+    res.json({message : "Signup Successful"});
   } catch (error) {
     next(error);
   }
