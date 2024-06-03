@@ -12,6 +12,10 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
+  profilePicture: {
+    type: String,
+    default: 'https://icons.veryicon.com/png/o/miscellaneous/rookie-official-icon-gallery/225-default-avatar.png'
+  },
   password: {
     type: String,
     required: true,
