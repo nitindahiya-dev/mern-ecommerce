@@ -9,7 +9,7 @@ const contactSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
-  textarea: {
+  message: {
     type: String,
     require: true,
   },

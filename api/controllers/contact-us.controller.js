@@ -1,16 +1,16 @@
 import Contact_us from "../models/contact-us.model.js";
 import { errorHandler } from "../utils/error.js";
 
-export default contactUs = async (req, res, next) => {
-  const { username, email, textarea } = req.body;
+export const contactUs = async (req, res, next) => {
+  const { username, email, message } = req.body;
 
   if (
     !username ||
     !email ||
-    !textarea ||
+    !message ||
     username === "" ||
     email === "" ||
-    textarea === ""
+    message === ""
   ) {
     next(errorHandler(400, "All fields are required"));
   }
@@ -18,7 +18,7 @@ export default contactUs = async (req, res, next) => {
   const contact_data = await new Contact_us({
     username,
     email,
-    textarea,
+    message,
   });
 
   try {
