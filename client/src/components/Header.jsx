@@ -13,7 +13,7 @@ export default function Header() {
         <div className="logo">
           <Link to={"/"} className="text-[35px] font-semibold"> <span className="text-amber-300 font-bold text-[30px]">Mern</span>Ecom</Link>
         </div>
-        <div className="navbar uppercase flex gap-7 font-semibold font-primaryFont text-sm">
+        {/* <div className="navbar uppercase flex gap-7 font-semibold font-primaryFont text-sm">
           <Link to={"/"}>Home</Link>
           <Link to={"/about-us"}>About us</Link>
           <Link to={"/contact-us"}>Contact us</Link>
@@ -28,7 +28,7 @@ export default function Header() {
           <FaRegHeart />
           <MdOutlineShoppingBag />
 
-        </div>
+        </div> */}
       </div>
         <Search />
 
