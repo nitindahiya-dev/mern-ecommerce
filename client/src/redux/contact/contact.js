@@ -4,7 +4,6 @@ const initialState = {
   message: null,
   error: null,
   loading: false,
-  success: false,
 };
 
 const contactSlice = createSlice({
@@ -14,18 +13,15 @@ const contactSlice = createSlice({
     messageStart: (state) => {
       state.loading = true;
       state.error = null;
-      state.success = false;
     },
     messageSuccess: (state, action) => {
       state.message = action.payload;
       state.error = null;
       state.loading = false;
-      state.success = true;
     },
     messageFailure: (state, action) => {
       state.loading = false;
       state.error = action.payload;
-      state.success = false;
     },
   },
 });

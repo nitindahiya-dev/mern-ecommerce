@@ -2,6 +2,9 @@ import { Alert, Spinner } from "flowbite-react";
 import { useState } from "react"
 import { useSelector, useDispatch } from "react-redux";
 import { messageStart, messageFailure, messageSuccess } from "../redux/contact/contact";
+import 'react-responsive-modal/styles.css';
+import { Modal } from 'react-responsive-modal';
+
 
 export default function Contact() {
 
@@ -11,7 +14,11 @@ export default function Contact() {
     message: ''
   });
 
-  const { loading, error: errorMessage, success } = useSelector(state => state.contact)
+  const [open, setOpen] = useState(false);
+   
+  const onCloseModal = () => setOpen(false);
+
+  const { loading, error: errorMessage } = useSelector(state => state.contact)
   const dispatch = useDispatch();
 
   const handleChange = (e) => {
@@ -37,6 +44,7 @@ export default function Contact() {
           email: '',
           message: ''
         });
+        setOpen(true);
       }
     }
     catch (error) {
@@ -106,16 +114,19 @@ export default function Contact() {
                   {errorMessage}
                 </Alert>
               }
-              {
-                success &&
-                <Alert className="mt-4  font-semibold" color={"success"}>
-                  Your Message has been sent..✅!!
-                </Alert>
-              }
             </div>
           </form>
         </div>
       </div>
+      <Modal open={open} onClose={onCloseModal} center>        
+        <h2 className="text-green-800 font-semibold">Your form have been submitted</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          pulvinar risus non risus hendrerit venenatis. Pellentesque sit amet
+          hendrerit risus, sed porttitor quam.
+        </p>
+      </Modal>
+
     </div>
   )
 }

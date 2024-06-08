@@ -7,6 +7,11 @@ export default {
     extend: {
       fontFamily: {
         primaryFont: ['"Poppins"' , "sans-serif"],
+      },
+      backgroundImage: {
+        'hero-pattern-1': "url('./banner-1.jpg')",
+        'hero-pattern-2': "url('./banner-2.jpg')",
+        'hero-pattern-3': "url('./banner-3.jpg')",
       }
     },
   },
