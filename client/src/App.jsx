@@ -7,6 +7,7 @@ import SignIn from "./pages/SignIn"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import TopHeader from "./components/TopHeader"
+import ProductDetails from "./pages/ProductDetails"
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <Route path="/contact-us" element={<Contact />} />
       <Route path="/sign-in" element={<SignIn />} />
       <Route path="/sign-up" element={<SignUp />} />
+      <Route path="/product-details" element={<ProductDetails />} />
       <Route path="*" element={<Home />} />
     </Routes>
     <Footer />
