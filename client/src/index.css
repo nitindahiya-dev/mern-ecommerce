@@ -10,16 +10,17 @@ body {
   display: none;
 }
 
-/* .carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover{ */
-  /* border: 3px solid #fff; */
-  /* background: #000; */
-/* 
-  box-shadow: 2px 2px 2px 1px #fff;
-} */
 
-/* .carousel .control-dots .dot{
-  border: 1px solid #fff;
-  height: 20px;
-  width: 20px;
-  padding: 10px;
-} */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom-number-input input:focus {
+  outline: none !important;
+}
+
+.custom-number-input button:focus {
+  outline: none !important;
+}
