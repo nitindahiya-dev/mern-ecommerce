@@ -6,132 +6,11 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { FaStar } from "react-icons/fa";
 import ProductDetail from "../components/ProductCard";
+import SortByCategory from "../components/SortByCategory";
+import NewAndTrendy from "../components/NewAndTrendy";
 
 
 export default function Home() {
-
-
-
-  const catergy_responsive = {
-    0: { items: 2 },
-    568: { items: 4 },
-    1024: { items: 6 },
-  };
-  const popular_responsive = {
-    0: { items: 2 },
-    568: { items: 4 },
-    1024: { items: 5 },
-  };
-
-  const catergy_items = [
-    <div key="1" className="item flex flex-col justify-center items-center gap-5" data-value="1">
-      <img className="rounded-full" src="./all_category/img-1.png" />
-      <span className="uppercase font-semibold">Category 1</span>
-    </div>,
-    <div key="2" className="item flex flex-col justify-center items-center gap-5" data-value="2">
-      <img className="rounded-full" src="./all_category/img-2.png" />
-      <span className="uppercase font-semibold"> Category 2</span>
-    </div>,
-    <div key="3" className="item flex flex-col justify-center items-center gap-5" data-value="3">
-      <img className="rounded-full" src="./all_category/img-3.png" />
-      <span className="uppercase font-semibold"> Category 3</span>
-    </div>,
-    <div key="4" className="item flex flex-col justify-center items-center gap-5" data-value="4">
-      <img className="rounded-full" src="./all_category/img-4.png" />
-      <span className="uppercase font-semibold"> Category 4</span>
-    </div>,
-    <div key="5" className="item flex flex-col justify-center items-center gap-5" data-value="5">
-      <img className="rounded-full" src="./all_category/img-5.png" />
-      <span className="uppercase font-semibold"> Category 5</span>
-    </div>,
-    <div key="6" className="item flex flex-col justify-center items-center gap-5" data-value="6">
-      <img className="rounded-full" src="./all_category/img-1.png" />
-      <span className="uppercase font-semibold"> Category 6</span>
-    </div>,
-    <div key="7" className="item flex flex-col justify-center items-center gap-5" data-value="7">
-      <img className="rounded-full" src="./all_category/img-2.png" />
-      <span className="uppercase font-semibold"> Category 7</span>
-    </div>,
-    <div key="8" className="item flex flex-col justify-center items-center gap-5" data-value="8">
-      <img className="rounded-full" src="./all_category/img-3.png" />
-      <span className="uppercase font-semibold"> Category 8</span>
-    </div>,
-  ];
-
-  const popular_items = [
-    <div key="1" className="item flex flex-col justify-center items-start p-3 gap-2 bg-white mx-5" data-value="1">
-      <img className="rounded-full mx-auto" src="./all_category/img-1.png" />
-      <span className="font-semibold text-gray-400 text-[14px]">Category 1</span>
-      <span>Product Name</span>
-      <div className="flex items-center gap-1">
-        <span className="flex"><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200 " /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /></span><span className="text-gray-400" >255</span>
-      </div>
-      <span className="text-lime-500 font-semibold">$35.90</span>
-    </div>,
-    <div key="2" className="item flex flex-col justify-center items-start p-3 gap-2 bg-white mx-5" data-value="2">
-      <img className="rounded-full mx-auto" src="./all_category/img-2.png" />
-      <span className="font-semibold text-gray-400 text-[14px]"> Category 2</span>
-      <span>Product Name</span>
-      <div className="flex items-center gap-1">
-        <span className="flex"><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200 " /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /></span><span className="text-gray-400" >255</span>
-      </div>
-      <span className="text-lime-500 font-semibold">$35.90</span>
-    </div>,
-    <div key="3" className="item flex flex-col justify-center items-start p-3 gap-2 bg-white mx-5" data-value="3">
-      <img className="rounded-full mx-auto" src="./all_category/img-3.png" />
-      <span className="font-semibold text-gray-400 text-[14px]"> Category 3</span>
-      <span>Product Name</span>
-      <div className="flex items-center gap-1">
-        <span className="flex"><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200 " /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /></span><span className="text-gray-400" >255</span>
-      </div>
-      <span className="text-lime-500 font-semibold">$35.90</span>
-    </div>,
-    <div key="4" className="item flex flex-col justify-center items-start p-3 gap-2 bg-white mx-5" data-value="4">
-      <img className="rounded-full mx-auto" src="./all_category/img-4.png" />
-      <span className="font-semibold text-gray-400 text-[14px]"> Category 4</span>
-      <span>Product Name</span>
-      <div className="flex items-center gap-1">
-        <span className="flex"><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200 " /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /></span><span className="text-gray-400" >255</span>
-      </div>
-      <span className="text-lime-500 font-semibold">$35.90</span>
-    </div>,
-    <div key="5" className="item flex flex-col justify-center items-start p-3 gap-2 bg-white mx-5" data-value="5">
-      <img className="rounded-full mx-auto" src="./all_category/img-5.png" />
-      <span className="font-semibold text-gray-400 text-[14px]"> Category 5</span>
-      <span>Product Name</span>
-      <div className="flex items-center gap-1">
-        <span className="flex"><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200 " /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /></span><span className="text-gray-400" >255</span>
-      </div>
-      <span className="text-lime-500 font-semibold">$35.90</span>
-    </div>,
-    <div key="6" className="item flex flex-col justify-center items-start p-3 gap-2 bg-white mx-5" data-value="6">
-      <img className="rounded-full mx-auto" src="./all_category/img-1.png" />
-      <span className="font-semibold text-gray-400 text-[14px]"> Category 6</span>
-      <span>Product Name</span>
-      <div className="flex items-center gap-1">
-        <span className="flex"><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200 " /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /></span><span className="text-gray-400" >255</span>
-      </div>
-      <span className="text-lime-500 font-semibold">$35.90</span>
-    </div>,
-    <div key="7" className="item flex flex-col justify-center items-start p-3 gap-2 bg-white mx-5" data-value="7">
-      <img className="rounded-full mx-auto" src="./all_category/img-2.png" />
-      <span className="font-semibold text-gray-400 text-[14px]"> Category 7</span>
-      <span>Product Name</span>
-      <div className="flex items-center gap-1">
-        <span className="flex"><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200 " /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /></span><span className="text-gray-400" >255</span>
-      </div>
-      <span className="text-lime-500 font-semibold">$35.90</span>
-    </div>,
-    <div key="8" className="item flex flex-col justify-center items-start p-3 gap-2 bg-white mx-5" data-value="8">
-      <img className="rounded-full mx-auto" src="./all_category/img-3.png" />
-      <span className="font-semibold text-gray-400 text-[14px]"> Category 8</span>
-      <span>Product Name</span>
-      <div className="flex items-center gap-1">
-        <span className="flex"><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200 " /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /><FaStar className="text-yellow-200" /></span><span className="text-gray-400" >255</span>
-      </div>
-      <span className="text-lime-500 font-semibold">$35.90</span>
-    </div>,
-  ];
 
   return (
     // Banner start
@@ -239,35 +118,12 @@ export default function Home() {
       {/* Banner End  */}
 
       {/* All Product Carousel Start */}
-      <div className="p-5 max-w-[1450px] mx-auto my-20">
-        <div className="flex items-center justify-between">
-          <p className="uppercase font-semibold text-[30px]">shop by categories</p>
-          <Link to={"/"} className="uppercase border-b-2 border-black text-[15px] font-semibold">shop all Product</Link>
-        </div>
-
-        <div className="mt-10">
-          <AliceCarousel
-            mouseTracking
-            items={catergy_items}
-            responsive={catergy_responsive}
-            controlsStrategy="alternate"
-            autoPlay
-            autoPlayStrategy="none"
-            autoPlayInterval={1000}
-            animationDuration={1000}
-            animationType="fadeout"
-            infinite
-            touchTracking={false}
-            disableDotsControls
-            disableButtonsControls
-          />
-        </div>
-      </div>
+      <SortByCategory />
       {/* All Product Carousel End */}
 
       {/* Spacial product tabs start */}
 
-<ProductDetail />
+      <ProductDetail />
 
       {/* Spacial product tabs End */}
 
@@ -291,33 +147,8 @@ export default function Home() {
 
       {/* Popular Products Start */}
 
-      <div className="p-5 max-w-[1450px] mx-auto my-20">
-        <div className="flex items-center justify-between">
-          <p className="uppercase font-semibold text-[30px]">NEW & POPULAR PRODUCTS</p>
-          <Link to={"/"} className="uppercase border-b-2 border-black text-[15px] font-semibold">shop all Product</Link>
-        </div>
-
-        <div className="mt-10">
-          <AliceCarousel
-            mouseTracking
-            items={popular_items}
-            responsive={popular_responsive}
-            controlsStrategy="alternate"
-            autoPlay
-            autoPlayStrategy="none"
-            autoPlayInterval={1000}
-            animationDuration={1000}
-            animationType="fadeout"
-            infinite
-            touchTracking={false}
-            disableDotsControls
-          // disableButtonsControls
-          />
-        </div>
-      </div>
-
+      <NewAndTrendy />
       {/* Popular Products End */}
-
     </div>
   );
 }

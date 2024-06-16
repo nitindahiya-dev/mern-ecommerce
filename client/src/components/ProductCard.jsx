@@ -25,7 +25,7 @@ export default function ProductDetail() {
   return (
     <div className='max-w-[1450px] mx-auto'>
               <div className="flex items-center justify-between">
-          <p className="uppercase font-semibold text-[30px]">shop by categories</p>
+          <p className="uppercase font-semibold text-[30px]">Popular Products</p>
           <Link to={"/"} className="uppercase border-b-2 border-black text-[15px] font-semibold">shop all Product</Link>
         </div>
       {isLoading ? (
